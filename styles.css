@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#9b58d1, #ae91c5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque para mejorar la legibilidad */
+    border: 5px solid #ae91c5;
+    color: #000;
+    border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 1px solid #9b58d1;
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    font-size: 1.5em;
+}
+
+#palabra {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+    flex-wrap: wrap;
+}
+
+.letra {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #9b58d1;
+    text-align: center;
+    margin: 3px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.pintar {
+    background-color: #02bfa4;
+    color: #fff; /* Texto blanco sobre fondo verde */
+}
+
+.pintarError {
+    background-color: red;
+    color: #fff; /* Texto blanco sobre fondo rojo */
+}
+
+h3 {
+    margin: 8px 0;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+h3 span {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+button {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    background-color: #02bfa4;
+    border: 2px solid #02bfa4;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #029c83;
+}
+
+#teclado {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .letra {
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+
+    h3 span {
+        font-size: 1em;
+    }
+
+    button {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}

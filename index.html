@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="palabra.png" type="image/png">
+    <title>Adivina la Palabra</title>
+</head>
+<body>
+    <div class="container">
+        <section id="gameSection">
+            <h2>Adivina la Palabra</h2>
+            <div id="palabra">
+                <div class="letra pintar">G</div>
+                <div class="letra">U</div>
+                <div class="letra">I</div>
+                <div class="letra">T</div>
+                <div class="letra">A</div>
+                <div class="letra">R</div>
+                <div class="letra">R</div>
+                <div class="letra">A</div>
+            </div>
+            <h3>Ayuda: <span id="ayuda">Ayuda de la palabra</span></h3>
+            <h3>Intentos restantes: <span id="intentos">5</span></h3>
+            <h3>Letras ingresadas: <span id="letrasIngresadas"></span></h3>
+            <button onclick="cargarNuevaPalabra()">--></button>
+
+            <h3>Teclado</h3>
+            <div id="teclado">
+                <button onclick="teclaPresionada('A')">A</button>
+                <button onclick="teclaPresionada('B')">B</button>
+                <button onclick="teclaPresionada('C')">C</button>
+                <button onclick="teclaPresionada('D')">D</button>
+                <button onclick="teclaPresionada('E')">E</button>
+                <button onclick="teclaPresionada('F')">F</button>
+                <button onclick="teclaPresionada('G')">G</button>
+                <button onclick="teclaPresionada('H')">H</button>
+                <button onclick="teclaPresionada('I')">I</button>
+                <button onclick="teclaPresionada('J')">J</button>
+                <button onclick="teclaPresionada('K')">K</button>
+                <button onclick="teclaPresionada('L')">L</button>
+                <button onclick="teclaPresionada('M')">M</button>
+                <button onclick="teclaPresionada('N')">N</button>
+                <button onclick="teclaPresionada('O')">O</button>
+                <button onclick="teclaPresionada('P')">P</button>
+                <button onclick="teclaPresionada('Q')">Q</button>
+                <button onclick="teclaPresionada('R')">R</button>
+                <button onclick="teclaPresionada('S')">S</button>
+                <button onclick="teclaPresionada('T')">T</button>
+                <button onclick="teclaPresionada('U')">U</button>
+                <button onclick="teclaPresionada('V')">V</button>
+                <button onclick="teclaPresionada('W')">W</button>
+                <button onclick="teclaPresionada('X')">X</button>
+                <button onclick="teclaPresionada('Y')">Y</button>
+                <button onclick="teclaPresionada('Z')">Z</button>
+            </div>
+        </section>
+
+        <section id="finalScreen" style="display: none;">
+            <h2>Resultados</h2>
+            <p>Correctas: <span id="correctas"></span></p>
+            <p>Incorrectas: <span id="incorrectas"></span></p>
+            <button onclick="resetGame()">New</button>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
