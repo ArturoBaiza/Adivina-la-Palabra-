@@ -87,6 +87,10 @@ function resetGame() {
   cargarNuevaPalabra();
 }
 
+function volverAlMenu() {
+  window.location.href = "https://juegos-5to-baco.onrender.com";
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
   cargarNuevaPalabra();
   generarTeclado();
