@@ -78,6 +78,25 @@ h3 span {
     font-size: 1.1em;
 }
 
+#gameSection button {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    background-color: #02bfa4;
+    border: 2px solid #02bfa4;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#gameSection button:hover {
+    background-color: #029c83;
+}
+
 #finalScreen button {
     display: inline-block;
     width: 120px;
@@ -121,6 +140,12 @@ h3 span {
 
     h3 span {
         font-size: 1em;
+    }
+
+    #gameSection button {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
     }
 
     #finalScreen button {
