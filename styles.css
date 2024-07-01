@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
+/* CSS en styles.css */
+
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -78,15 +80,15 @@ h3 span {
 
 button {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
     margin: 4px;
     background-color: #02bfa4;
     border: 2px solid #02bfa4;
     border-radius: 5px;
     color: #fff;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -122,8 +124,8 @@ button:hover {
     }
 
     button {
-        width: 25px;
-        height: 25px;
+        width: 80px;
+        height: 30px;
         font-size: 12px;
     }
 
