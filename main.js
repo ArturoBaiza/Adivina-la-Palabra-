@@ -1,8 +1,6 @@
- let arrayPalabras = [
+let arrayPalabras = [
   "GUITARRA", "ELEFANTE", "TURQUESA", "MARIELA", "TECLADO", "INGLATERRA",
-  "COMPUTADORA", "PROGRAMACION", "BICICLETA", "MARIPOSA", "MUSICA",
-  "TELEFONO", "CALCULADORA", "LENGUAJE", "ELECTRICIDAD", "AEROPUERTO",
-  "DRAGON", "PIZARRA", "RELOJ", "BIBLIOTECA"
+  "COMPUTADORA", "PROGRAMACION", "BICICLETA", "MARIPOSA"
 ];
 
 let ayudas = [
@@ -15,17 +13,7 @@ let ayudas = [
   "Dispositivo automatizado para el procesamiento y gestión de información", // COMPUTADORA
   "El arte de formular algoritmos para la automatización de procesos", // PROGRAMACION
   "Medio de transporte de tracción humana con un par de ruedas", // BICICLETA
-  "Insecto volador que representa el proceso de metamorfosis", // MARIPOSA
-  "Manifestación creativa que se experimenta a través del sentido del oído", // MUSICA
-  "Instrumento móvil para la transmisión y recepción de información verbal o escrita", // TELEFONO
-  "Utensilio matemático para operaciones manuales avanzadas", // CALCULADORA
-  "Red de interacción mediante la transmisión oral y textual", // LENGUAJE
-  "Corriente de partículas dotadas de carga eléctrica en movimiento", // ELECTRICIDAD
-  "Facilidad destinada al mantenimiento y operación de aeronaves", // AEROPUERTO
-  "Ente legendario capaz de proyectar flamas con intensidad", // DRAGON
-  "Tablero de enseñanza destinado a la inscripción de datos en salas académicas", // PIZARRA
-  "Dispositivo destinado a la cuantificación temporal", // RELOJ
-  "Local destinado a la adquisición de literatura y publicaciones" // BIBLIOTECA
+  "Insecto volador que representa el proceso de metamorfosis" // MARIPOSA
 ];
 
 let palabrasJugadas = [];
@@ -75,15 +63,17 @@ function mostrarPantallaFinal() {
   document.getElementById("finalScreen").style.display = "block";
   document.getElementById("correctas").innerText = correctas;
   document.getElementById("incorrectas").innerText = incorrectas;
+  document.getElementById("volverMenu").style.display = "inline-block";
 }
 
 function resetGame() {
+  palabrasJugadas = [];
   correctas = 0;
   incorrectas = 0;
-  palabrasJugadas = [];
-  cargarNuevaPalabra();
   document.getElementById("gameSection").style.display = "block";
   document.getElementById("finalScreen").style.display = "none";
+  document.getElementById("volverMenu").style.display = "none";
+  cargarNuevaPalabra();
 }
 
 function volverAlMenu() {
@@ -119,7 +109,6 @@ function comprobarLetra(letra) {
     if (cantidadAcertadas === totalQueDebeAcertar) {
       correctas++;
       setTimeout(cargarNuevaPalabra, 1000);
-      palabrasJugadas.push(arrayPalabraActual.join('')); // Guardar palabra jugada
     }
   } else {
     intentosRestantes--;
@@ -128,7 +117,6 @@ function comprobarLetra(letra) {
     if (intentosRestantes === 0) {
       incorrectas++;
       setTimeout(cargarNuevaPalabra, 1000);
-      palabrasJugadas.push(arrayPalabraActual.join('')); // Guardar palabra jugada
     }
   }
 }
