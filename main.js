@@ -58,6 +58,7 @@ function cargarNuevaPalabra() {
   intentosRestantes = 5;
   document.getElementById("intentos").innerHTML = intentosRestantes;
   document.getElementById("ayuda").innerHTML = ayudas[posActual];
+  resetearTeclado();
 }
 
 function mostrarPantallaFinal() {
@@ -94,12 +95,21 @@ function generarTeclado() {
   letras.forEach(letra => {
     let boton = document.createElement('button');
     boton.innerHTML = letra;
-    boton.onclick = () => comprobarLetra(letra);
+    boton.onclick = () => comprobarLetra(letra, boton);
     teclado.appendChild(boton);
   });
 }
 
-function comprobarLetra(letra) {
+function resetearTeclado() {
+  let botones = document.querySelectorAll("#teclado button");
+  botones.forEach(boton => {
+    boton.disabled = false;
+  });
+}
+
+function comprobarLetra(letra, boton) {
+  boton.disabled = true;
+
   if (arrayPalabraActual.includes(letra)) {
     for (let i = 0; i < arrayPalabraActual.length; i++) {
       if (arrayPalabraActual[i] === letra) {
