@@ -77,6 +77,7 @@ function resetGame() {
   document.getElementById("finalScreen").style.display = "none";
   document.getElementById("volverMenu").style.display = "none";
   cargarNuevaPalabra();
+  cargarNuevaPalabra(); // Cargar una nueva palabra después del reset para evitar repetir la última palabra
 }
 
 function volverAlMenu() {
