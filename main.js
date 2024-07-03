@@ -38,6 +38,8 @@ function cargarNuevaPalabra() {
     palabra = arrayPalabras[posActual];
   } while (palabrasJugadas.includes(palabra));
 
+  palabrasJugadas.push(palabra);
+
   arrayPalabraActual = palabra.split('');
   totalQueDebeAcertar = palabra.length;
   cantidadAcertadas = 0;
