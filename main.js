@@ -1,19 +1,19 @@
 let arrayPalabras = [
-  "GUITARRA", "ELEFANTE", "TURQUESA", "MARIELA", "TECLADO", "INGLATERRA",
-  "COMPUTADORA", "PROGRAMACION", "BICICLETA", "MARIPOSA"
+  "MICROSCOPIO", "FOTOGRAFIA", "TELESCOPIO", "UNIVERSIDAD", "COMPUTADORA", "ENCICLOPEDIA",
+  "AEROPUERTO", "TELEVISION", "BIBLIOTECA", "MARIPOSA"
 ];
 
 let ayudas = [
-  "Induce oscilaciones en un sustrato elástico mediante perturbaciones mecánicas", // GUITARRA
-  "Cuadrúpedo de gran envergadura con probóscide prominente", // ELEFANTE
-  "Color que yace en el espectro cromático entre el verde y el azul", // TURQUESA
-  "Nombre común en algunos países hispanohablantes", // MARIELA
-  "Instrumento digital para la producción de texto mediante métodos electrónicos", // TECLADO
-  "Un enclave insular reconocido por su infusión emblemática y su soberano", // INGLATERRA
-  "Dispositivo automatizado para el procesamiento y gestión de información", // COMPUTADORA
-  "El arte de formular algoritmos para la automatización de procesos", // PROGRAMACION
-  "Medio de transporte de tracción humana con un par de ruedas", // BICICLETA
-  "Insecto volador que representa el proceso de metamorfosis" // MARIPOSA
+  "Instrumento que permite observar objetos muy pequeños al ampliarlos varias veces.", // MICROSCOPIO
+  "Imagen obtenida mediante la captación de la luz en una superficie sensible.", // FOTOGRAFIA
+  "Instrumento óptico que permite ver objetos distantes, especialmente en astronomía.", // TELESCOPIO
+  "Institución de educación superior donde se imparten enseñanzas y se realizan investigaciones.", // UNIVERSIDAD
+  "Máquina electrónica que procesa datos y ejecuta programas para realizar diversas tareas.", // COMPUTADORA
+  "Conjunto de libros que recogen conocimientos sobre diversas materias, ordenados alfabéticamente.", // ENCICLOPEDIA
+  "Instalación donde se gestionan vuelos y aviones, con áreas para pasajeros y carga.", // AEROPUERTO
+  "Aparato que recibe y reproduce imágenes y sonidos emitidos a distancia.", // TELEVISION
+  "Lugar donde se guardan libros y otros materiales de lectura para consulta o préstamo.", // BIBLIOTECA
+  "Insecto con dos pares de alas coloridas y cuerpo alargado" // MARIPOSA
 ];
 
 let palabrasJugadas = [];
